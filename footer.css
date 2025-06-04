@@ -1,0 +1,161 @@
+/* Sticky layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff; /* light blue background */
+  }
+ 
+  .page-wrapper {
+    min-height: calc(100vh - 300px); /* adjust based on footer height */
+  }
+ 
+  /* Footer styles */
+  footer {
+    background: #002b5c; /* deep blue */
+    color: #fff;
+    padding: 80px 10% 40px;
+    border-top-left-radius: 100px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+ 
+  .footer-col {
+    flex: 1 1 220px;
+    min-width: 200px;
+  }
+ 
+  .logo {
+    width: 100px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  }
+ 
+  .footer-col h3 {
+    color: #00bfff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+  }
+ 
+  .footer-col h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 2px;
+    width: 40px;
+    background: #00bfff;
+  }
+ 
+  .footer-col p,
+  .footer-col h4 {
+    color: #e0f7ff;
+    margin: 8px 0;
+  }
+ 
+  .email-id {
+    display: inline-block;
+    margin: 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #66ccff;
+    color: #cfefff;
+  }
+ 
+ .footerr ul {
+    list-style: none;
+    padding: 0;
+  }
+ 
+  .footerr ul li {
+    margin: 12px 0;
+  }
+ 
+  .footerr ul li a {
+    color: #e0f7ff;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+ 
+    .footerr ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: #00bfff;
+    transition: 0.3s;
+  }
+ 
+  .footerr ul li a:hover {
+    color: #00bfff;
+  }
+ 
+  .footerr ul li a:hover::after {
+    width: 100%;
+  }
+ 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  form input[type="email"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+    border-radius: 5px;
+  }
+ 
+  form button {
+    padding: 10px;
+    background: #00bfff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+ 
+  form button:hover {
+    background: #0099cc;
+  }
+ 
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #b0d9f8;
+  }
+
+
+footer {
+  background: #002b5c; 
+  color: #fff;
+  padding: 80px 0 40px 0;
+  border-top-left-radius: 100px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.footerr {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
